@@ -1,9 +1,11 @@
 import React from 'react'
 import WaterSkiActionSvg from '../images/scuba.svg'
 
+import './test.scss'
+
 const Test = () => (
-  <div>
-    <h1>Test</h1>
+  <div className="test">
+    <h1 className="title">Test</h1>
     <img src={WaterSkiActionSvg} alt="Jetski" />
   </div>
 )
