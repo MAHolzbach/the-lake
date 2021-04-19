@@ -1,7 +1,7 @@
 {
-  "name": "react-webpack-boilerplate",
+  "name": "the-lake",
   "version": "1.0.0",
-  "description": "React, Webpack, Babel, ESLint",
+  "description": "Recreational lake app.",
   "main": "index.js",
   "author": "Mike Holzbach",
   "license": "MIT",
@@ -30,6 +30,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.23.1",
     "eslint-webpack-plugin": "^2.1.0",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.4.0",
     "node-sass": "^5.0.0",
