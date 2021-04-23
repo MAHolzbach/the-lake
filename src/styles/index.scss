@@ -1,8 +1,36 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
+  font-family: 'Lilita';
+  src: url('../fonts/LilitaOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'Baloo Regular';
+  src: url('../fonts/BalooDa2-Regular.ttf');
+}
+@font-face {
+  font-family: 'Baloo Medium';
+  src: url('../fonts/BalooDa2-Medium.ttf');
+}
+
+@mixin phone {
+  @media (max-width: #{$phone}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
 }
 
 @import 'variables';
 @import 'scaffolding';
-@import '../components/test';
+@import '../components/navbar';
+@import '../components/landing';
+@import '../components/services';

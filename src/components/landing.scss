@@ -1,0 +1,30 @@
+@import '../styles/variables';
+
+.landing {
+  height: 80vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-title,
+.landing-subtitle,
+.landing-text {
+  font-family: $lilita;
+  text-align: center;
+}
+
+.landing-title {
+  font-size: 5rem;
+  letter-spacing: 4px;
+  margin: 0 0 24px 0;
+}
+
+.landing-subtitle {
+  font-size: 1.5rem;
+}
+
+.landing-text {
+  font-size: 1.2rem;
+}

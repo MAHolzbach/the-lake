@@ -1,10 +1,13 @@
 import React from 'react'
-import Test from './components/Test'
+import Navbar from './components/Navbar.jsx'
+import Landing from './components/Landing.jsx'
+import Services from './components/Services.jsx'
 
 const App = () => (
   <div>
-    <h1>Project</h1>
-    <Test />
+    <Navbar />
+    <Landing />
+    <Services />
   </div>
 )
 

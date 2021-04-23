@@ -1,7 +1,13 @@
+html,
+body {
+  background: center url('../images/the-lake.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
 html {
   font-size: $font-size;
-  font-family: $font-family;
-  background: $background-color;
   color: $font-color;
   max-width: $page-width;
   line-height: 1.4;
@@ -13,11 +19,6 @@ body {
 }
 
 #app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  align-self: center;
   height: 100vh;
 }
 
