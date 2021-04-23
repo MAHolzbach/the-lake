@@ -29,7 +29,8 @@
     "func-names": [1, "as-needed"],
     "arrow-body-style": 1,
     "semi": [1, "never"],
-    "import/no-extraneous-dependencies": ["off", { "devDependencies": false }]
+    "import/no-extraneous-dependencies": ["off", { "devDependencies": false }],
+    "react/prop-types": 0
   },
   "env": {
     "browser": true,
