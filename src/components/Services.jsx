@@ -3,14 +3,7 @@ import React from 'react'
 import ServiceCard from './ServiceCard.jsx'
 
 const Services = () => {
-  const services = [
-    'Jetski',
-    'Waterski',
-    'Fishing',
-    'Kayaking',
-    'Scuba',
-    'Canoeing',
-  ]
+  const services = ['jetski', 'waterski', 'fishing', 'kayak', 'scuba', 'canoe']
   return (
     <div className="services">
       <h1 className="services-title">Choose an adventure!</h1>

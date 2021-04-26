@@ -6,6 +6,7 @@
   "author": "Mike Holzbach",
   "license": "MIT",
   "scripts": {
+    "svgr": "svgr -d src/components/SvgComponents src/images/svg-for-components",
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "lint": "eslint . src config || true"
@@ -16,6 +17,7 @@
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.13.13",
+    "@svgr/cli": "^5.5.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^8.1.0",
@@ -46,7 +48,9 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "^17.0.2",
+    "react-card-component": "0.0.1-beta.5.8.3",
     "react-dom": "^17.0.2"
   }
 }

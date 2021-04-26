@@ -1,0 +1,6 @@
+export { default as Canoe } from './Canoe'
+export { default as Fishing } from './Fishing'
+export { default as Jetski } from './Jetski'
+export { default as Kayak } from './Kayak'
+export { default as Scuba } from './Scuba'
+export { default as Waterski } from './Waterski'
