@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import './landing.scss'
 
@@ -8,7 +9,9 @@ const Landing = () => (
     <h3 className="landing__subtitle">
       Welcome to New York&apos;s premier outdoor aquatic adventure destination!
     </h3>
-    <button className="landing__button">Get Started</button>
+    <NavLink to="/services" className="landing__navlink">
+      <button className="landing__button">Get Started</button>
+    </NavLink>
     {/* <h3 className="landing-text">
       Located in beautiful Massarappaconsanononakeequa, we have everything you
       need for a great adventure!

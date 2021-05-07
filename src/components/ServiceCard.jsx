@@ -1,9 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { Card } from 'react-card-component'
 import CardImage from './CardImage.jsx'
 
 const ServiceCard = ({ service }) => (
-  <div className="card__wrapper">
+  <NavLink to={`/services/${service.name}`} className="card__wrapper">
     <Card
       bordered
       hoverType={'up'}
@@ -15,7 +16,7 @@ const ServiceCard = ({ service }) => (
       </div>
       <h2>{service.renderName}</h2>
     </Card>
-  </div>
+  </NavLink>
 )
 
 export default ServiceCard
