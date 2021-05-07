@@ -65,7 +65,12 @@ module.exports = {
       { test: /\.(js|jsx)$/, use: ['babel-loader'] },
 
       // Images: Copy image files to build folder
-      { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        use: {
+          loader: 'url-loader',
+        },
+      },
 
       // Fonts and SVGs: Inline files
       {

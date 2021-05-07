@@ -1,1 +1,25 @@
 @import '../styles/variables';
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: $baloo-regular;
+  margin: 12px;
+  width: 300px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.card__image {
+  height: 150px;
+  width: 150px;
+}

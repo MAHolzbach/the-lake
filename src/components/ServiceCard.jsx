@@ -1,25 +1,21 @@
 import React from 'react'
 import { Card } from 'react-card-component'
+import CardImage from './CardImage.jsx'
 
-import { Canoe, Fishing, Jetski, Kayak, Scuba, Waterski } from './SvgComponents'
-
-const ServiceCard = ({ service }) => {
-  const svgComponents = {
-    Canoe,
-    Fishing,
-    Jetski,
-    Kayak,
-    Scuba,
-    Waterski,
-  }
-  const CardSvg = svgComponents[service.name]
-  console.log(service)
-  return (
-    <Card bordered outlined hoverType={'up'}>
-      {CardSvg ? <CardSvg /> : null}
-      <h2>{service.name}</h2>
+const ServiceCard = ({ service }) => (
+  <div className="card__wrapper">
+    <Card
+      bordered
+      hoverType={'up'}
+      style={{ width: 'inherit' }}
+      className="card"
+    >
+      <div className="card__image">
+        <CardImage img={service.name} />
+      </div>
+      <h2>{service.renderName}</h2>
     </Card>
-  )
-}
+  </div>
+)
 
 export default ServiceCard
