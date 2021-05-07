@@ -1,13 +1,6 @@
 {
   "ignorePatterns": ["dist", "node_modules"],
   "rules": {
-    "max-len": [
-      "error",
-      {
-        "ignoreUrls": true,
-        "code": 80
-      }
-    ],
     "prefer-template": "off",
     "indent": [1, 2],
     "object-curly-spacing": 1,
@@ -29,7 +22,8 @@
     "func-names": [1, "as-needed"],
     "arrow-body-style": 1,
     "semi": [1, "never"],
-    "import/no-extraneous-dependencies": ["off", { "devDependencies": false }]
+    "import/no-extraneous-dependencies": ["off", { "devDependencies": false }],
+    "react/prop-types": 0
   },
   "env": {
     "browser": true,

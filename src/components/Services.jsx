@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import AppContext from '../AppContext'
 
-const Services = () => (
-  <div>
-    <h1 className="landing-title">The Lake</h1>
-    <h3 className="landing-subtitle">
-      Welcome to New York&apos;s premier outdoor, aquatic adventure destination!
-    </h3>
-  </div>
-)
+import ServiceCard from './ServiceCard.jsx'
+
+const Services = () => {
+  const services = useContext(AppContext)
+
+  return (
+    <div className="services">
+      <h1 className="services-title">Choose an adventure!</h1>
+      {services.map((service) => (
+        <ServiceCard key={service.name} service={service} />
+      ))}
+    </div>
+  )
+}
 
 export default Services

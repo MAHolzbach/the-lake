@@ -3,6 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const PrettierPlugin = require('prettier-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
 const paths = require('./paths')
 
 module.exports = {
@@ -54,6 +55,7 @@ module.exports = {
 
     // Prettier configuration
     new PrettierPlugin(),
+    new Dotenv({ path: paths.env }),
   ],
 
   // Determine how modules within the project are treated
@@ -63,7 +65,12 @@ module.exports = {
       { test: /\.(js|jsx)$/, use: ['babel-loader'] },
 
       // Images: Copy image files to build folder
-      { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        use: {
+          loader: 'url-loader',
+        },
+      },
 
       // Fonts and SVGs: Inline files
       {
