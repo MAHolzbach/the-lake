@@ -1,12 +1,38 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => (
   <div className="navbar">
     <ul className="navbar-list">
-      <li className="navbar-item">Home</li>
-      <li className="navbar-item">Services</li>
-      <li className="navbar-item">Info</li>
-      <li className="navbar-item">Join</li>
+      <NavLink
+        className="navbar-item"
+        exact
+        to="/"
+        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 white' }}
+      >
+        Home
+      </NavLink>
+      <NavLink
+        className="navbar-item"
+        to="/services"
+        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 white' }}
+      >
+        Services
+      </NavLink>
+      <NavLink
+        className="navbar-item"
+        to="/info"
+        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 white' }}
+      >
+        Info
+      </NavLink>
+      <NavLink
+        className="navbar-item"
+        to="/join"
+        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 white' }}
+      >
+        Join
+      </NavLink>
     </ul>
   </div>
 )
