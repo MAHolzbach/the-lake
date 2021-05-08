@@ -1,32 +1,27 @@
 @import '../styles/variables';
 
 .vehicle-details {
-  margin-top: -64px;
-  height: 100vh;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: white;
+  height: 100%;
+  background-color: $white;
+  font-family: $font-regular;
 }
 
 .vehicle-details__content {
-  padding-top: 64px;
+  height: 100%;
+  display: flex;
+  padding: 24px;
 }
 
-.canoe {
-  .vehcile-details__title {
-    color: $black;
-  }
+.vehicle-details__data,
+.vehicle-details__image-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
-.jetski {
-  .vehcile-details__title {
-    color: $black;
-  }
-}
-.kayak {
-}
-.scuba {
-}
-.waterski {
-}
-.windsurf {
+
+.vehicle-details__image {
+  transform: rotate(-90deg);
+  width: 300px;
 }

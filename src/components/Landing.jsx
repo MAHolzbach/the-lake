@@ -5,7 +5,7 @@ import './landing.scss'
 
 const Landing = () => (
   <div className="landing">
-    <h1 className="landing__title">Seabreeze Yachts</h1>
+    <h1 className="landing__title">Seabreeze Marina</h1>
     <div>
       <h3 className="landing__subtitle">
         Welcome to Virginia&apos;s premier yacht club!

@@ -42,8 +42,12 @@ const BoatDetails = () => {
   return (
     <div className={`vehicle-details ${boat}`}>
       <div className="vehicle-details__content">
-        <h1 className="vehcile-details__title">{boatData.renderName}</h1>
-        <img className="vehicle-details__image" src={images[boat]} />
+        <div className="vehicle-details__data">
+          <h1 className="vehcile-details__title">{boatData.renderName}</h1>
+        </div>
+        <div className="vehicle-details__image-wrapper">
+          <img className="vehicle-details__image" src={images[boat]} />
+        </div>
       </div>
     </div>
   )
