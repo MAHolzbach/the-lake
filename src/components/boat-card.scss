@@ -1,0 +1,76 @@
+@import '../styles/variables';
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: $font-regular;
+  margin: 12px;
+  padding: 12px;
+  width: 300px;
+  border-radius: 24px;
+  transition: transform 0.3s;
+  color: $black;
+
+  &:nth-child(odd) {
+    background-color: $lightGreen;
+  }
+  &:nth-child(even) {
+    background-color: $lightBlue;
+  }
+
+  &:hover {
+    transform: translate(0px, -5px);
+  }
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card__title {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.card__status {
+  background-color: $blue;
+  color: $white;
+  font-family: $font-light;
+  padding: 4px 8px;
+  border-radius: 24px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 8px;
+}
+
+.card__footer {
+  display: flex;
+  width: 100%;
+}
+
+.footer__price {
+  font-family: $font-bold;
+  color: $blue;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.footer__text {
+  font-family: $font-light;
+  font-size: 1rem;
+}

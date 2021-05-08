@@ -1,20 +1,20 @@
 import React from 'react'
 
-import canoe from '../images/canoe.png'
-import jetski from '../images/jetski.png'
-import kayak from '../images/kayak.png'
-import scuba from '../images/scuba.png'
-import waterski from '../images/waterski.png'
-import windsurf from '../images/windsurf.png'
+import breeze from '../images/breeze.png'
+import lancer from '../images/lancer.png'
+import nina from '../images/nina.png'
+import pinta from '../images/pinta.png'
+import santaMaria from '../images/santaMaria.png'
+import waverunner from '../images/waverunner.png'
 
 const CardImage = ({ img }) => {
   const images = {
-    canoe,
-    jetski,
-    kayak,
-    scuba,
-    waterski,
-    windsurf,
+    breeze,
+    lancer,
+    nina,
+    pinta,
+    santaMaria,
+    waverunner,
   }
 
   return (

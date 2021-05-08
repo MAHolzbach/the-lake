@@ -6,38 +6,38 @@ import AppContext from './AppContext'
 
 import Navbar from './components/Navbar.jsx'
 import Landing from './components/Landing.jsx'
-import Services from './components/Services.jsx'
-import VehicleDetails from './components/VehicleDetails.jsx'
+import Boats from './components/Boats.jsx'
+import VehicleDetails from './components/BoatDetails.jsx'
 
 const App = () => {
-  const [services, setServices] = useState([])
+  const [boats, setBoats] = useState([])
 
   useEffect(() => {
-    const fetchServices = async () => {
-      const response = await axios(process.env.SERVICES)
-      setServices(response.data)
+    const fetchBoats = async () => {
+      const response = await axios(process.env.BOATS)
+      setBoats(response.data)
     }
-    fetchServices()
+    fetchBoats()
   }, [])
 
   return (
-    <AppContext.Provider value={services}>
-      <div>
+    <AppContext.Provider value={boats}>
+      <>
         <Router>
           <Navbar />
           <Switch>
             <Route exact path="/">
               <Landing />
             </Route>
-            <Route exact path="/services">
-              <Services />
+            <Route exact path="/boats">
+              <Boats />
             </Route>
-            <Route exact path="/services/:service">
+            <Route exact path="/boats/:boat">
               <VehicleDetails />
             </Route>
           </Switch>
         </Router>
-      </div>
+      </>
     </AppContext.Provider>
   )
 }
