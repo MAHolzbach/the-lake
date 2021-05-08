@@ -24,8 +24,10 @@ const VehicleDetails = () => {
   }, [])
 
   return (
-    <div>
-      <h1>{service}</h1>
+    <div className={`vehicle-details ${service}`}>
+      <div className="vehicle-details_content">
+        <h1>{service}</h1>
+      </div>
     </div>
   )
 }
