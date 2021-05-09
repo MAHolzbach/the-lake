@@ -1,16 +1,17 @@
 $font-size: 1rem;
-$lilita: 'Lilita', sans-serif;
-$baloo-regular: 'Baloo Regular', sans-serif;
-$baloo-medium: 'Baloo Medium', sans-serif;
-$font-color: #dae0e0;
+$font-light: 'Rubik Light', sans-serif;
+$font-regular: 'Rubik Regular', sans-serif;
+$font-bold: 'Rubik Bold', sans-serif;
 $page-width: 650px;
 
 $phone: 640px;
 $tablet: 768px;
 $desktop: 1024px;
 
-$mediumBrown: #99565a;
-$paleYellow: #e6e4ae;
-$paleOrange: #e6979d;
-$paleBlue: #81c2e6;
-$paleGreen: #5d8499;
+$black: #2e4a68;
+$gray: #adadad;
+$blue: #0177fb;
+$lightBlue: lighten($blue, 30%);
+$green: #4dbcca;
+$lightGreen: lighten($green, 30%);
+$white: #f4f3f1;

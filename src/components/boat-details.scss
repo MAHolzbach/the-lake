@@ -1,0 +1,109 @@
+@import '../styles/variables';
+
+.vehicle-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: $white;
+  font-family: $font-regular;
+}
+
+.vehicle-details__content {
+  height: 80%;
+  display: flex;
+  padding: 24px;
+}
+
+.vehicle-details__data,
+.vehicle-details__image-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.vehicle-details__image-wrapper {
+  margin-right: -180px;
+}
+
+.vehicle-details__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: -197px;
+}
+
+.vehicle-details__title {
+  color: $blue;
+  font-family: $font-bold;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.vehicle-details__class {
+  margin: 0;
+  color: $gray;
+}
+
+.vehicle-details__price {
+  font-family: $font-bold;
+  font-size: 1.2rem;
+}
+
+.vehicle-details__price__text {
+  font-family: $font-light;
+  font-size: 1rem;
+}
+
+.vehicle-details__capacity,
+.vehicle-details__length,
+.vehicle-details__width {
+  margin-bottom: 12px;
+}
+
+.vehicle-details__capacity__icon,
+.vehicle-details__length__icon,
+.vehicle-details__width__icon {
+  width: 30px;
+  filter: invert(48%) sepia(100%) saturate(5120%) hue-rotate(197deg)
+    brightness(98%) contrast(105%);
+}
+
+.vehicle-details__capacity__text,
+.vehicle-details__length__text,
+.vehicle-details__width__text {
+  color: $gray;
+  margin: 0;
+}
+
+.vehicle-details__capacity__value,
+.vehicle-details__length__value,
+.vehicle-details__width__value {
+  font-family: $font-bold;
+  margin: 0;
+}
+
+.vehicle-details__image {
+  transform: rotate(-90deg);
+  width: 500px;
+}
+
+.vehicle-details__navlink {
+  width: 75%;
+  align-self: center;
+}
+
+.vehicle-details__button {
+  font-family: $font-regular;
+  font-size: 1.2rem;
+  background-color: $blue;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 16px;
+}

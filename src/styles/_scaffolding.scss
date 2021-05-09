@@ -1,14 +1,18 @@
 html,
 body {
-  background: center url('../images/the-lake.svg');
-  background-size: cover;
+  background: center url('../images/seabreeze.jpeg');
+  background-color: $white;
+  background-size: contain;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 html {
   font-size: $font-size;
-  color: $font-color;
+  color: $black;
   max-width: $page-width;
   line-height: 1.4;
 }
@@ -19,11 +23,7 @@ body {
 }
 
 #app {
-  height: 100vh;
-}
-
-h1 {
-  margin: auto;
-  text-align: center;
-  max-width: 90vw;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }

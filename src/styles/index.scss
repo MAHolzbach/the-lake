@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Lilita';
-  src: url('../fonts/LilitaOne-Regular.ttf');
+  font-family: 'Rubik Light';
+  src: url('../fonts/Rubik-Light.ttf');
 }
 @font-face {
-  font-family: 'Baloo Regular';
-  src: url('../fonts/BalooDa2-Regular.ttf');
+  font-family: 'Rubik Regular';
+  src: url('../fonts/Rubik-Regular.ttf');
 }
 @font-face {
-  font-family: 'Baloo Medium';
-  src: url('../fonts/BalooDa2-Medium.ttf');
+  font-family: 'Rubik Bold';
+  src: url('../fonts/Rubik-Bold.ttf');
 }
 
 @mixin phone {
@@ -33,6 +33,7 @@
 @import 'scaffolding';
 @import '../components/navbar';
 @import '../components/landing';
-@import '../components/services';
-@import '../components/service-card';
+@import '../components/boats';
+@import '../components/boat-card';
 @import '../components/card-image';
+@import '../components/boat-details';

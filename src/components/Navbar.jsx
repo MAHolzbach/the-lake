@@ -8,28 +8,28 @@ const Navbar = () => (
         className="navbar-item"
         exact
         to="/"
-        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 white' }}
+        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 #0177fb' }}
       >
         Home
       </NavLink>
       <NavLink
         className="navbar-item"
-        to="/services"
-        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 white' }}
+        to="/boats"
+        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 #0177fb' }}
       >
-        Services
+        Boats
       </NavLink>
       <NavLink
         className="navbar-item"
         to="/info"
-        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 white' }}
+        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 #0177fb' }}
       >
         Info
       </NavLink>
       <NavLink
         className="navbar-item"
         to="/join"
-        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 white' }}
+        activeStyle={{ boxShadow: 'inset 0 -2px 0 0 #0177fb' }}
       >
         Join
       </NavLink>

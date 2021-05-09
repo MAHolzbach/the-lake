@@ -1,13 +1,14 @@
 @import '../styles/variables';
 
-.services {
+.boats {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: $white;
 }
 
-.services-title {
-  font-family: $baloo-regular;
+.boats-title {
+  font-family: $font-regular;
   text-align: center;
 }
