@@ -1,13 +1,17 @@
 @import '../styles/variables';
 
 .vehicle-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   background-color: $white;
   font-family: $font-regular;
 }
 
 .vehicle-details__content {
-  height: 100%;
+  height: 80%;
   display: flex;
   padding: 24px;
 }
@@ -21,7 +25,56 @@
   align-content: center;
 }
 
+.vehicle-details__image-wrapper {
+  margin-right: -180px;
+}
+
+.vehicle-details__data {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-right: -180px;
+}
+
+.vehicle-details__title {
+  color: $blue;
+  font-family: $font-bold;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.vehicle-details__class {
+  margin: 0;
+  color: $gray;
+}
+
+.vehicle-details__price {
+  font-family: $font-bold;
+  font-size: 1.2rem;
+}
+
+.vehicle-details__price__text {
+  font-family: $font-light;
+  font-size: 1rem;
+}
+
 .vehicle-details__image {
   transform: rotate(-90deg);
-  width: 300px;
+  width: 500px;
+}
+
+.vehicle-details__navlink {
+  width: 75%;
+  align-self: center;
+}
+
+.vehicle-details__button {
+  font-family: $font-regular;
+  font-size: 1.2rem;
+  background-color: $blue;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 16px;
 }
