@@ -8,6 +8,9 @@ import nina from '../images/nina.png'
 import pinta from '../images/pinta.png'
 import santaMaria from '../images/santaMaria.png'
 import waverunner from '../images/waverunner.png'
+import lengthIcon from '../images/length-icon.svg'
+import widthIcon from '../images/width-icon.svg'
+import capacityIcon from '../images/capacity-icon.svg'
 
 const BoatDetails = () => {
   const { boat } = useParams()
@@ -43,12 +46,43 @@ const BoatDetails = () => {
     <div className={`vehicle-details ${boat}`}>
       <div className="vehicle-details__content">
         <div className="vehicle-details__data">
-          <h1 className="vehicle-details__title">{boatData.renderName}</h1>
-          <p className="vehicle-details__class">{boatData.class}</p>
-          <p className="vehicle-details__price">
-            {boatData.price}{' '}
-            <span className="vehicle-details__price__text">/day</span>
-          </p>
+          <div>
+            <h1 className="vehicle-details__title">{boatData.renderName}</h1>
+            <p className="vehicle-details__class">{boatData.class}</p>
+            <p className="vehicle-details__price">
+              ${boatData.price}
+              <span className="vehicle-details__price__text">/day</span>
+            </p>
+          </div>
+          <div className="vehicle-details__length">
+            <img
+              src={lengthIcon}
+              alt="length"
+              className="vehicle-details__length__icon"
+            />
+            <p className="vehicle-details__length__text">Length</p>
+            <p className="vehicle-details__length__value">{boatData.length}</p>
+          </div>
+          <div className="vehicle-details__width">
+            <img
+              src={widthIcon}
+              alt="width"
+              className="vehicle-details__width__icon"
+            />
+            <p className="vehicle-details__width__text">Width</p>
+            <p className="vehicle-details__width__value">{boatData.width}</p>
+          </div>
+          <div className="vehicle-details__capacity">
+            <img
+              src={capacityIcon}
+              alt="capacity"
+              className="vehicle-details__capacity__icon"
+            />
+            <p className="vehicle-details__capacity__text">Capacity</p>
+            <p className="vehicle-details__capacity__value">
+              {boatData.capacity} people
+            </p>
+          </div>
         </div>
         <div className="vehicle-details__image-wrapper">
           <img className="vehicle-details__image" src={images[boat]} />

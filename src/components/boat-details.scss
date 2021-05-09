@@ -32,8 +32,9 @@
 .vehicle-details__data {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 200px;
-  margin-right: -180px;
+  margin-right: -197px;
 }
 
 .vehicle-details__title {
@@ -56,6 +57,34 @@
 .vehicle-details__price__text {
   font-family: $font-light;
   font-size: 1rem;
+}
+
+.vehicle-details__capacity,
+.vehicle-details__length,
+.vehicle-details__width {
+  margin-bottom: 12px;
+}
+
+.vehicle-details__capacity__icon,
+.vehicle-details__length__icon,
+.vehicle-details__width__icon {
+  width: 30px;
+  filter: invert(48%) sepia(100%) saturate(5120%) hue-rotate(197deg)
+    brightness(98%) contrast(105%);
+}
+
+.vehicle-details__capacity__text,
+.vehicle-details__length__text,
+.vehicle-details__width__text {
+  color: $gray;
+  margin: 0;
+}
+
+.vehicle-details__capacity__value,
+.vehicle-details__length__value,
+.vehicle-details__width__value {
+  font-family: $font-bold;
+  margin: 0;
 }
 
 .vehicle-details__image {
