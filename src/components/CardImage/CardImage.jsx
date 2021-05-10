@@ -1,11 +1,11 @@
 import React from 'react'
 
-import breeze from '../images/breeze.png'
-import lancer from '../images/lancer.png'
-import nina from '../images/nina.png'
-import pinta from '../images/pinta.png'
-import santaMaria from '../images/santaMaria.png'
-import waverunner from '../images/waverunner.png'
+import breeze from '../../images/breeze.png'
+import lancer from '../../images/lancer.png'
+import nina from '../../images/nina.png'
+import pinta from '../../images/pinta.png'
+import santaMaria from '../../images/santaMaria.png'
+import waverunner from '../../images/waverunner.png'
 
 const CardImage = ({ img }) => {
   const images = {

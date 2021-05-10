@@ -4,13 +4,21 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import AppContext from './AppContext'
 
-import Navbar from './components/Navbar.jsx'
-import Landing from './components/Landing.jsx'
-import Boats from './components/Boats.jsx'
-import VehicleDetails from './components/BoatDetails.jsx'
+import Navbar from './components/Navbar/Navbar.jsx'
+import Landing from './components/Landing/Landing.jsx'
+import Boats from './components/Boats/Boats.jsx'
+import BoatDetails from './components/BoatDetails/BoatDetails.jsx'
+import Payment from './components/Payment/Payment.jsx'
 
 const App = () => {
   const [boats, setBoats] = useState([])
+  const [selectedBoat, setSelectedBoat] = useState(null)
+
+  const context = {
+    boats,
+    selectedBoat,
+    setSelectedBoat,
+  }
 
   useEffect(() => {
     const fetchBoats = async () => {
@@ -21,7 +29,7 @@ const App = () => {
   }, [])
 
   return (
-    <AppContext.Provider value={boats}>
+    <AppContext.Provider value={context}>
       <>
         <Router>
           <Navbar />
@@ -33,7 +41,10 @@ const App = () => {
               <Boats />
             </Route>
             <Route exact path="/boats/:boat">
-              <VehicleDetails />
+              <BoatDetails />
+            </Route>
+            <Route exact path="/payment">
+              <Payment />
             </Route>
           </Switch>
         </Router>

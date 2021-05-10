@@ -1,0 +1,83 @@
+@import '../../styles//variables';
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: $white;
+  height: 100%;
+  margin: 24px;
+}
+
+.payment__card-image {
+  width: 100%;
+  margin-top: -64px;
+}
+
+.payment__date-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-regular;
+}
+
+.payment__date-select__start {
+  margin-right: 8px;
+}
+
+.payment__date-select__start__text,
+.payment__date-select__end__text {
+  color: $gray;
+}
+
+.date-picker {
+  border: 1px solid $blue;
+  border-radius: 8px;
+  color: $blue;
+
+  .react-date-picker__wrapper {
+    border: none;
+  }
+}
+
+.payment__details {
+  width: 100%;
+}
+
+.payment__details__text {
+  font-family: $font-regular;
+  color: $gray;
+}
+
+.payment__details__text,
+.payment__details__time {
+  font-family: $font-regular;
+  margin: 0;
+}
+.payment__details__time,
+.payment__details__total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment__details__time__text,
+.payment__details__time__price {
+  margin: 0;
+}
+
+.payment__details__total {
+  font-family: $font-bold;
+  font-size: 1.2rem;
+}
+
+.payment__button {
+  font-family: $font-regular;
+  font-size: 1.2rem;
+  background-color: $blue;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 16px;
+}

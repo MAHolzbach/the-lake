@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import CardImage from './CardImage.jsx'
+import CardImage from '../CardImage/CardImage.jsx'
 
 const BoatCard = ({ boat }) => (
   <NavLink to={`/boats/${boat.name}`} className="card__wrapper">

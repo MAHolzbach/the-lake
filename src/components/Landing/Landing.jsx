@@ -1,8 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import './landing.scss'
-
 const Landing = () => (
   <div className="landing">
     <h1 className="landing__title">Seabreeze Marina</h1>

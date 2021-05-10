@@ -29,11 +29,12 @@
   }
 }
 
-@import 'variables';
-@import 'scaffolding';
-@import '../components/navbar';
-@import '../components/landing';
-@import '../components/boats';
-@import '../components/boat-card';
-@import '../components/card-image';
-@import '../components/boat-details';
+@import './variables';
+@import './scaffolding';
+@import '../components/Navbar/navbar.scss';
+@import '../components/Landing/landing.scss';
+@import '../components/Boats/boats.scss';
+@import '../components/BoatCard/boat-card.scss';
+@import '../components/CarDImage/card-image.scss';
+@import '../components/BoatDetails/boat-details.scss';
+@import '../components/Payment/payment.scss';
