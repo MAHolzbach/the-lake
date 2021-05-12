@@ -12,10 +12,6 @@ const Landing = () => (
         <button className="landing__button">Get Started</button>
       </NavLink>
     </div>
-    {/* <h3 className="landing-text">
-      Located in beautiful Massarappaconsanononakeequa, we have everything you
-      need for a great adventure!
-    </h3> */}
   </div>
 )
 
