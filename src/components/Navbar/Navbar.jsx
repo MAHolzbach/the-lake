@@ -21,10 +21,10 @@ const Navbar = () => (
       </NavLink>
       <NavLink
         className="navbar-item"
-        to="/info"
+        to="/about"
         activeStyle={{ boxShadow: 'inset 0 -2px 0 0 #0177fb' }}
       >
-        Info
+        About
       </NavLink>
       <NavLink
         className="navbar-item"

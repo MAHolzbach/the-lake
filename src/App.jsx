@@ -9,7 +9,7 @@ import Landing from './components/Landing/Landing.jsx'
 import Boats from './components/Boats/Boats.jsx'
 import BoatDetails from './components/BoatDetails/BoatDetails.jsx'
 import Payment from './components/Payment/Payment.jsx'
-import Info from './components/Info/Info.jsx'
+import About from './components/About/About.jsx'
 
 const App = () => {
   const [boats, setBoats] = useState([])
@@ -47,8 +47,8 @@ const App = () => {
             <Route exact path="/payment">
               <Payment />
             </Route>
-            <Route exact path="/info">
-              <Info />
+            <Route exact path="/about">
+              <About />
             </Route>
           </Switch>
         </Router>
