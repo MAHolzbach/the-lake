@@ -33,6 +33,7 @@ const Payment = () => {
             onChange={setStartDate}
             value={startDate}
             className="date-picker"
+            minDate={new Date()}
           />
         </div>
         <div className="payment__date-select__end">
@@ -41,6 +42,7 @@ const Payment = () => {
             onChange={setEndDate}
             value={endDate}
             className="date-picker"
+            minDate={startDate}
           />
         </div>
       </div>

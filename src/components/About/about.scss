@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.about {
+  font-family: $font-regular;
+  padding: 24px;
+  background: $white;
+}
+
+.about__image {
+  border-radius: 8px;
+  width: 100%;
+}
