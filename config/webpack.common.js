@@ -1,7 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const PrettierPlugin = require('prettier-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 const paths = require('./paths')
@@ -53,8 +52,6 @@ module.exports = {
       formatter: 'table',
     }),
 
-    // Prettier configuration
-    new PrettierPlugin(),
     new Dotenv({ path: paths.env }),
   ],
 
