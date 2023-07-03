@@ -52,7 +52,6 @@ module.exports = {
       formatter: 'table',
     }),
 
-    // Prettier configuration
     new Dotenv({ path: paths.env }),
   ],
 
